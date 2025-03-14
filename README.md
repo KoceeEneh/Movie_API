@@ -89,7 +89,32 @@ https://github.com/KoceeEneh/Movie_API/blob/d81a423c80cb2ef5051ec448264d3472c770
 - Fetches movies released in a specific year.
 
 - Trigger: HTTP Request with query parameter (year).
-# perlink
+
+```python
+
+def lambda_get_movies_by_year(event, context):
+
+
+    try:
+
+
+        year = event.get("queryStringParameters", {}).get("year")
+        if not year:
+            return {"statusCode": 400, "body": "Year parameter is required"}
+
+
+        response = dynamodb.scan(TableName=TABLE_NAME)
+        movies = [
+            m
+            for m in response.get("Items", [])
+            if m.get("info", {}).get("M", {}).get("year", {}).get("S") == year
+        ]
+
+
+        return {"statusCode": 200, "body": json.dumps(movies)}
+    except Exception as e:
+        return {"statusCode": 500, "body": f"Error retrieving movies by year: {e}"}
+```
 
 ## Deploying AWS Lambda Functions
 1. Package the function
