@@ -173,5 +173,8 @@ curl https://your-function-url.aws-region.on.aws/
 
 <img width="1326" alt="Screenshot 2025-03-14 at 02 03 19" src="https://github.com/user-attachments/assets/503dd10c-b884-4809-b68f-c526b74ebed0" />
 
+# Author
+
+- https://x.com/ko_ceeherself
 
 
