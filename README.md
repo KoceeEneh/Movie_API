@@ -82,7 +82,16 @@ this should:
 - Trigger: HTTP Request via Function URL or API Gateway.
 
 ```python
-https://github.com/KoceeEneh/Movie_API/blob/d81a423c80cb2ef5051ec448264d3472c770633b/boto3_m.py#L136C1-L143C76
+def lambda_get_movies(event, context):
+
+
+    try:
+
+
+        response = dynamodb.scan(TableName=TABLE_NAME)
+        return {"statusCode": 200, "body": json.dumps(response.get("Items", []))}
+    except Exception as e:
+        return {"statusCode": 500, "body": f"Error retrieving movies: {e}"}
 ```
 **2. Get Movie by Year**
 
