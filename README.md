@@ -80,7 +80,8 @@ this should:
 - Retrieves all movies stored in DynamoDB.
 
 - Trigger: HTTP Request via Function URL or API Gateway.
-# perlink
+
+https://github.com/KoceeEneh/Movie_API/blob/783403cf0148346d20017833590a5aa87ccabb1b/boto3_m.py#L136
 
 **2. Get Movie by Year**
 
