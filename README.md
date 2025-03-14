@@ -1,8 +1,7 @@
-# Movie_API Project
+# Movie API Project
 
-#Overview
-The Movie API Project is a cloud-based serverless application that fetches movie details from the OMDb API, stores them in an AWS DynamoDB table, and saves movie posters in an S3 bucket. The API is powered by AWS Lambda functions that provide movie-related data via HTTP requests.
----
+# Overview
+The Movie API Project is a cloud-based serverless application that fetches movie details from the OMDb API, stores them in an AWS DynamoDB table, and saves movie posters in an S3 bucket. the API is powered by AWS lambda functions that provide movie-related data via HTTP requests.
 
 # Features
 - Fetch movie details using the OMDb API.
