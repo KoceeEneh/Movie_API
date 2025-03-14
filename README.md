@@ -81,7 +81,7 @@ this should:
 
 - Trigger: HTTP Request via Function URL or API Gateway.
 
-(https://github.com/KoceeEneh/Movie_API/blob/d81a423c80cb2ef5051ec448264d3472c770633b/boto3_m.py#L136C1-L143C76)
+https://github.com/KoceeEneh/Movie_API/blob/d81a423c80cb2ef5051ec448264d3472c770633b/boto3_m.py#L136C1-L143C76
 
 **2. Get Movie by Year**
 
